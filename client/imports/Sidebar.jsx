@@ -9,17 +9,25 @@ export default class Sidebar extends Component {
           {/* Sidebar Header    */}
           <div className="sidenav-header d-flex align-items-center justify-content-center">
             {/* User Info*/}
-            <div className="sidenav-header-inner text-center"><img src="img/avatar-1.jpg" alt="person" className="img-fluid rounded-circle" />
-              <h2 className="h5">Anderson Hardy</h2><span>Web Developer</span>
+            <div className="sidenav-header-inner text-center"><img src="img/logo_512.png" alt="person" className="img-fluid rounded-circle" />
+              <h2 className="h5">Latunys</h2><span>Dev Tools</span>
             </div>
             {/* Small Brand information, appears on minimized sidebar*/}
-            <div className="sidenav-header-logo"><a href="index.html" className="brand-small text-center"> <strong>B</strong><strong className="text-primary">D</strong></a></div>
+            <div className="sidenav-header-logo"><a href="index.html" className="brand-small text-center"> <strong>L</strong><strong className="text-primary">S</strong></a></div>
           </div>
           {/* Sidebar Navigation Menus*/}
           <div className="main-menu">
             <h5 className="sidenav-heading">Main</h5>
             <ul id="side-main-menu" className="side-menu list-unstyled">                  
               <li><a href="index.html"> <i className="icon-home" />Home                           </a></li>
+               <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i className="icon-interface-windows" />Метафоры</a>
+                <ul id="exampledropdownDropdown" className="collapse list-unstyled ">
+                  <li><a href="#">Важность</a></li>
+                  <li><a href="#">Как использовать</a></li>
+                  <li><a href="#">Популярные</a></li>
+                </ul>
+              </li>
+
               <li><a href="forms.html"> <i className="icon-form" />Forms                           </a></li>
               <li><a href="charts.html"> <i className="fa fa-bar-chart" />Charts                           </a></li>
               <li><a href="tables.html"> <i className="icon-grid" />Tables                           </a></li>
@@ -31,8 +39,6 @@ export default class Sidebar extends Component {
                 </ul>
               </li>
               <li><a href="login.html"> <i className="icon-interface-windows" />Login page                           </a></li>
-              <li> <a href="#"> <i className="icon-mail" />Demo
-                  <div className="badge badge-warning">6 New</div></a></li>
             </ul>
           </div>
           <div className="admin-menu">
